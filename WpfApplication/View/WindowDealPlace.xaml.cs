@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApplication.ViewModel;
 
 namespace WpfApplication.View
 {
@@ -20,6 +21,8 @@ namespace WpfApplication.View
         public WindowDealPlace()
         {
             InitializeComponent();
+            DealPlaceViewModel vmDealPlace = new DealPlaceViewModel();
+            lvDealPlace.ItemsSource = vmDealPlace.ListDealPlace;
         }
     }
 }

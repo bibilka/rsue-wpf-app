@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApplication.ViewModel;
 
 namespace WpfApplication.View
 {
@@ -20,6 +21,9 @@ namespace WpfApplication.View
         public WindowCurrency()
         {
             InitializeComponent();
+            CurrencyViewModel vmCurrency = new CurrencyViewModel();
+            lvCurrency.ItemsSource = vmCurrency.ListCurrency;
+
         }
     }
 }
