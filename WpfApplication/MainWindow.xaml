@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApplication.MainWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:local="clr-namespace:WpfApplication"
+ mc:Ignorable="d"
+ Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Menu>
+            <MenuItem x:Name="Deal" Header="Сделки" Click="Deal_OnClick"></MenuItem>
+            <MenuItem x:Name="DealType" Header="Типы сделок" Click="DealType_OnClick"></MenuItem>
+            <MenuItem x:Name="DealPlace" Header="Места сделок" Click="DealPlace_OnClick"></MenuItem>
+            <MenuItem x:Name="Currency" Header="Валюта" Click="Currency_OnClick"></MenuItem>
+        </Menu>
+    </Grid>
+</Window>
