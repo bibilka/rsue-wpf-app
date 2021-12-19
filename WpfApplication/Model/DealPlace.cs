@@ -20,5 +20,11 @@ namespace WpfApplication.Model
             this.PlaceFull = PlaceFull;
             this.PlaceShort = PlaceShort;
         }
+
+        public DealPlace ShallowCopy()
+        {
+            return (DealPlace)this.MemberwiseClone();
+        }
+
     }
 }

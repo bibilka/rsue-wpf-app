@@ -54,5 +54,23 @@ namespace WpfApplication.ViewModel
                 }
             );
         }
+
+        /// <summary>
+        /// Нахождение максимального Id
+        /// </summary>
+        /// <returns></returns>
+        public int MaxId()
+        {
+            int max = 0;
+            foreach (var r in this.ListDealPlace)
+            {
+                if (max < r.Id)
+                {
+                    max = r.Id;
+                };
+            }
+            return max;
+        }
+
     }
 }
